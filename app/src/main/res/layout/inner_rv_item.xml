@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="120dp"
+    android:layout_height="58dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="7dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="7dp"
+    android:background="@drawable/supper_gradient"
+    android:gravity="center">
+
+    <com.blure.complexview.ComplexView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:radius="50dp"
+        app:shadow="true"
+        app:shadowAlpha="100"
+        app:shadowColor="#F4B63C"
+        app:shadowSpread="1">
+
+        <com.blure.complexview.ComplexView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center"
+            app:radius="50dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Kotlin Basic"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </com.blure.complexview.ComplexView>
+    </com.blure.complexview.ComplexView>
+
+
+</LinearLayout>
